@@ -1,0 +1,73 @@
+{
+  "items": [
+    {
+      "id": "qa-specialization",
+      "title": "Software Quality & Testing Specialization (self-directed)",
+      "company": null,
+      "location": null,
+      "period": "June 2026 — Present",
+      "current": true,
+      "bullets": [
+        "Preparing for the ISTQB Foundation Level certification",
+        "Deepening test automation skills with Selenium, Postman, and JUnit",
+        "This portfolio built as a full engineering project (Next.js, TypeScript, frontend architecture)"
+      ]
+    },
+    {
+      "id": "cdi-polydron",
+      "title": "Backend Java Engineer — Microservices",
+      "company": "Sodexo (via Polydron Labs)",
+      "location": "Paris, France",
+      "period": "January 2025 — June 2026",
+      "current": false,
+      "bullets": [
+        "Built and maintained Spring Boot microservices in a distributed environment",
+        "Optimized REST API performance and improved service resilience",
+        "Contributed to backend architecture and distributed systems design"
+      ]
+    },
+    {
+      "id": "pfe-polydron",
+      "title": "Graduate Internship — Backend Java Engineer",
+      "company": "Polydron Labs",
+      "location": "Paris, France",
+      "period": "April 2024 — December 2024",
+      "current": false,
+      "bullets": [
+        "Designed and built REST APIs with Spring Boot and PostgreSQL integration",
+        "Set up CI/CD pipelines to automate deployments",
+        "Continuously improved backend service quality and stability"
+      ]
+    },
+    {
+      "id": "proxym",
+      "title": "Internship — Backend Engineer, Architecture & Microservices",
+      "company": "Proxym",
+      "location": "Sousse, Tunisia",
+      "period": "June 2023 — September 2023",
+      "current": false,
+      "bullets": [
+        "Migrated a SaaS application from a monolithic to a microservices architecture",
+        "Split the system into independent services exposing REST APIs (Spring Boot)",
+        "Set up a distributed architecture with Spring Cloud, RabbitMQ, and an API Gateway",
+        "Worked closely with frontend teams on feature integration"
+      ],
+      "projectSlug": "project-flow"
+    },
+    {
+      "id": "siteflow",
+      "title": "Internship — Backend Engineer, IoT & Event-Driven",
+      "company": "SiteFlow",
+      "location": "Sousse, Tunisia",
+      "period": "May 2022 — September 2022",
+      "current": false,
+      "bullets": [
+        "Built a Java backend for real-time IoT data processing",
+        "Implemented an event-driven architecture with Apache Kafka",
+        "Designed REST APIs with Spring Boot and MongoDB persistence",
+        "Containerized services with Docker and covered them with unit tests (JUnit, Mockito)"
+      ],
+      "projectSlug": "smart-building-iot"
+    }
+  ]
+}

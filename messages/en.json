@@ -1,0 +1,132 @@
+{
+  "Skip": {
+    "toContent": "Skip to main content"
+  },
+  "Header": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "toggleTheme": "Toggle theme",
+    "language": "Switch language"
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "Footer": {
+    "rights": "All rights reserved."
+  },
+  "Hero": {
+    "greeting": "Hi, I'm",
+    "availableBadge": "Available for new opportunities",
+    "ctaProjects": "View my projects",
+    "ctaCv": "Download my resume",
+    "ctaContact": "Get in touch",
+    "profilePhoto": "Profile photo"
+  },
+  "About": {
+    "eyebrow": "About",
+    "bugHuntTitle": "Bug Hunt",
+    "bugHuntCounterLabel": "bugs tracked & squashed",
+    "bugHuntTagline": "A bug found in testing is a bug that never reaches production."
+  },
+  "Experience": {
+    "eyebrow": "Journey",
+    "title": "Professional Experience",
+    "description": "From backend development to focused expertise in software quality and testing.",
+    "current": "Ongoing",
+    "selfDirected": "Self-directed",
+    "viewCaseStudy": "View case study"
+  },
+  "Education": {
+    "eyebrow": "Education",
+    "title": "Academic Background",
+    "description": "A strong scientific foundation and an engineering degree in software engineering."
+  },
+  "Skills": {
+    "eyebrow": "Skills",
+    "title": "A complete toolkit, from backend to finished product",
+    "description": "Technologies and practices used regularly.",
+    "certifications": "Certifications",
+    "obtained": "Obtained",
+    "inProgress": "In progress"
+  },
+  "FeaturedProjects": {
+    "eyebrow": "Projects",
+    "title": "Technical case studies",
+    "description": "Two backend systems analyzed in depth: architecture, patterns, and real trade-offs.",
+    "viewAll": "All projects"
+  },
+  "Contact": {
+    "eyebrow": "Contact",
+    "title": "Let's talk about your next project",
+    "description": "Whether it's an opportunity, a collaboration, or just a chat — feel free to reach out.",
+    "responseNote": "I usually reply within 24 to 48 hours",
+    "formTitle": "Send me a message",
+    "formSubtitle": "I personally reply to every request.",
+    "linkGithub": "GitHub",
+    "linkLinkedin": "LinkedIn",
+    "linkLinkedinHint": "View profile",
+    "linkEmail": "Email",
+    "linkPhone": "Phone",
+    "linkWhatsapp": "WhatsApp",
+    "linkCv": "Resume",
+    "linkCvHint": "Download PDF"
+  },
+  "ContactForm": {
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Describe your project or request...",
+    "submit": "Send message",
+    "hint": "Opens your email client with the message pre-filled.",
+    "defaultName": "New message",
+    "subjectPrefix": "Portfolio contact"
+  },
+  "ProjectsPage": {
+    "eyebrow": "Portfolio",
+    "title": "Projects",
+    "description": "Each project below is a complete case study: architecture, tech stack, diagrams, and challenges faced — all derived directly from the source code.",
+    "upcomingEyebrow": "Coming up",
+    "upcomingTitle": "Projects in progress"
+  },
+  "ProjectCard": {
+    "caseStudy": "Case study",
+    "codeSource": "Source code"
+  },
+  "InProgressCard": {
+    "inDevelopment": "In development",
+    "comingSoon": "Coming soon"
+  },
+  "CaseStudy": {
+    "hero": {
+      "backToProjects": "All projects",
+      "codeSource": "Source code",
+      "demo": "Demo"
+    },
+    "about": {
+      "eyebrow": "About",
+      "title": "Context, problem & solution"
+    },
+    "architecture": {
+      "eyebrow": "Architecture",
+      "title": "How the system is built"
+    },
+    "techStack": {
+      "eyebrow": "Tech stack",
+      "title": "Technologies used"
+    },
+    "cta": {
+      "title": "Want to know more about {name}?",
+      "description": "The complete source code is available on GitHub, along with the history and deployment configuration.",
+      "exploreCode": "Explore the code",
+      "otherProjects": "Other projects"
+    }
+  }
+}

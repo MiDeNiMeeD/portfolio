@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f4f1ea;
+  --foreground: #17191a;
+  --surface: #eeeae0;
+  --surface-hover: #e6e1d5;
+  --card: #faf7f0;
+  --card-border: #e6e1d3;
+  --muted: #71756e;
+  --muted-foreground: #62665f;
+  --border: #e6e1d3;
+  --accent: #3f8f68;
+  --accent-foreground: #ffffff;
+  --accent-soft: #e2f0e8;
+  --ring: #3f8f68;
+  --radius: 1.25rem;
+  --blob-a: #f6d3ce;
+  --blob-b: #d2e3f3;
+  --blob-c: #e7d9f2;
+}
+
+.dark {
+  --background: #0e0f0d;
+  --foreground: #f2f1ec;
+  --surface: #161815;
+  --surface-hover: #1e211d;
+  --card: #171915;
+  --card-border: #272a24;
+  --muted: #9aa199;
+  --muted-foreground: #a7ada4;
+  --border: #272a24;
+  --accent: #52c98d;
+  --accent-foreground: #062814;
+  --accent-soft: #142a1f;
+  --ring: #52c98d;
+  --blob-a: #3a2224;
+  --blob-b: #1f2c38;
+  --blob-c: #2b2333;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light):not(.dark) {
+    --background: #0e0f0d;
+    --foreground: #f2f1ec;
+    --surface: #161815;
+    --surface-hover: #1e211d;
+    --card: #171915;
+    --card-border: #272a24;
+    --muted: #9aa199;
+    --muted-foreground: #a7ada4;
+    --border: #272a24;
+    --accent: #52c98d;
+    --accent-foreground: #062814;
+    --accent-soft: #142a1f;
+    --ring: #52c98d;
+    --blob-a: #3a2224;
+    --blob-b: #1f2c38;
+    --blob-c: #2b2333;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-card: var(--card);
+  --color-card-border: var(--card-border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-soft: var(--accent-soft);
+  --color-ring: var(--ring);
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 0.125rem);
+  --radius-sm: calc(var(--radius) - 0.25rem);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+/* Flat panel background — no blur/backdrop-filter, kept as a plain class so
+   existing usages (header, case-study CTA) don't need per-site edits. */
+.glass {
+  background: var(--card);
+}
+
+.prose-custom {
+  color: var(--muted-foreground);
+  line-height: 1.75;
+}
+
+.prose-custom > * + * {
+  margin-top: 1.25em;
+}
+
+.prose-custom strong {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.prose-custom a {
+  color: var(--accent);
+  text-underline-offset: 3px;
+  text-decoration: underline;
+}
+
+.prose-custom ul {
+  list-style: disc;
+  padding-left: 1.25em;
+}
+
+.prose-custom code {
+  background: var(--surface-hover);
+  padding: 0.15em 0.4em;
+  border-radius: 0.3em;
+  font-size: 0.875em;
+  font-family: var(--font-mono);
+}
+
+.prose-custom pre {
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 1em;
+  overflow-x: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

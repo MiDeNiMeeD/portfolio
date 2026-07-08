@@ -1,0 +1,131 @@
+"use client";
+
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { ArrowRight, Download, Mail, MapPin } from "lucide-react";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { Button } from "@/components/ui/button";
+import type { SiteConfig } from "@/types/site";
+
+const container = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.1, delayChildren: 0.1 } },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] as const } },
+};
+
+export function Hero({ site }: { site: SiteConfig }) {
+  const t = useTranslations("Hero");
+
+  const socials = [
+    { href: site.github, icon: FaGithub, label: "GitHub" },
+    { href: site.linkedin, icon: FaLinkedin, label: "LinkedIn" },
+    { href: `mailto:${site.email}`, icon: Mail, label: "Email" },
+    { href: `https://wa.me/${site.whatsapp.replace(/\D/g, "")}`, icon: FaWhatsapp, label: "WhatsApp" },
+    { href: null, icon: MapPin, label: site.location },
+  ];
+
+  return (
+    <section className="relative flex min-h-[calc(100svh-5rem)] flex-col justify-center overflow-hidden px-6 py-6 sm:py-10">
+      {/* soft background blobs */}
+      <div
+        className="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full opacity-60 blur-3xl"
+        style={{ background: "var(--blob-a)" }}
+      />
+      <div
+        className="pointer-events-none absolute -top-10 right-0 h-64 w-64 rounded-full opacity-50 blur-3xl"
+        style={{ background: "var(--blob-b)" }}
+      />
+      <div
+        className="pointer-events-none absolute bottom-0 right-10 h-72 w-72 rounded-full opacity-50 blur-3xl"
+        style={{ background: "var(--blob-c)" }}
+      />
+
+      {/* decorative corner arches */}
+      <div className="pointer-events-none absolute left-10 top-36 hidden h-20 w-20 rounded-tl-full border-l-2 border-t-2 border-[var(--card-border)] lg:block" />
+      <div className="pointer-events-none absolute bottom-24 right-16 hidden h-16 w-16 rounded-tl-full border-l-2 border-t-2 border-[var(--card-border)] lg:block" />
+
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="relative mx-auto flex max-w-3xl flex-col items-center text-center"
+      >
+        <div className="absolute left-0 top-20 hidden flex-col items-start gap-5 lg:flex">
+          {socials.map(({ href, icon: Icon, label }) =>
+            href ? (
+              <a
+                key={label}
+                href={href}
+                target={href.startsWith("http") ? "_blank" : undefined}
+                rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+                className="flex items-center gap-2 text-[var(--muted-foreground)] transition-colors hover:text-[var(--accent)]"
+              >
+                <Icon className="h-5 w-5" />
+                <span className="text-sm font-medium">{label}</span>
+              </a>
+            ) : (
+              <div key={label} className="flex items-center gap-2 text-[var(--muted-foreground)]">
+                <Icon className="h-5 w-5" />
+                <span className="text-sm font-medium">{label}</span>
+              </div>
+            )
+          )}
+        </div>
+
+        <motion.div variants={item} className="relative -mt-4 h-[28svh] max-w-full sm:-mt-6 sm:h-[42svh]">
+          <div
+            className="pointer-events-none absolute inset-x-6 top-6 -z-10 aspect-square rounded-full opacity-80 blur-2xl"
+            style={{ background: "var(--surface)" }}
+          />
+          <Image
+            src="/personal-photo-cutout.png"
+            alt={t("profilePhoto")}
+            width={992}
+            height={1077}
+            priority
+            className="relative h-full w-auto max-w-full object-contain"
+          />
+        </motion.div>
+
+        <motion.div variants={item} className="mt-3 sm:mt-5">
+          <p className="text-sm font-semibold uppercase tracking-widest text-[var(--accent)]">{t("greeting")}</p>
+          <h1 className="mt-1 text-3xl font-extrabold tracking-tight sm:text-5xl">{site.name}</h1>
+          <p className="mt-2 text-sm font-semibold uppercase tracking-[0.2em] text-[var(--muted-foreground)]">
+            {site.title}
+          </p>
+        </motion.div>
+
+        <motion.div
+          variants={item}
+          className="mt-5 inline-flex items-center gap-2 rounded-full border border-[var(--card-border)] bg-[var(--card)] px-4 py-1.5 text-xs font-medium text-[var(--muted-foreground)]"
+        >
+          <span className="relative flex h-1.5 w-1.5">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--accent)] opacity-75" />
+            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[var(--accent)]" />
+          </span>
+          {t("availableBadge")}
+        </motion.div>
+
+        <motion.div variants={item} className="mt-4 flex flex-wrap items-center justify-center gap-2 sm:mt-5 sm:gap-3">
+          <Button href="/projects" size="lg" className="h-10 px-5 text-sm sm:h-12 sm:px-8 sm:text-base">
+            {t("ctaProjects")}
+            <ArrowRight className="h-4 w-4" />
+          </Button>
+          <Button href={site.cvUrl} variant="dark" size="lg" external className="h-10 px-5 text-sm sm:h-12 sm:px-8 sm:text-base">
+            <Download className="h-4 w-4" />
+            {t("ctaCv")}
+          </Button>
+          <Button href="/#contact" variant="outline" size="lg" className="h-10 px-5 text-sm sm:h-12 sm:px-8 sm:text-base">
+            <Mail className="h-4 w-4" />
+            {t("ctaContact")}
+          </Button>
+        </motion.div>
+      </motion.div>
+    </section>
+  );
+}
