@@ -4,13 +4,12 @@
   },
   "items": [
     {
-      "slug": "shoofli",
-      "name": "Shoofli",
-      "description": "A services marketplace SPA connecting clients with technicians. React + TypeScript + Tailwind, with client/technician/admin roles, publications, and in-app contact.",
-      "tech": ["React", "TypeScript", "Tailwind CSS"],
-      "progress": 70,
-      "status": "in-development",
-      "image": "/projects/shoofli.png"
+      "slug": "mideni-trade",
+      "name": "Mideni Trade (IA Trader)",
+      "description": "An autonomous crypto-trading platform with a live control-center dashboard: Binance market data, indicators, a signal scanner, and a real-time event feed. M1 (data pipeline + dashboard) is complete; the decision committee and risk/execution engine land in M2, followed by ML and backtesting.",
+      "tech": ["NestJS", "Next.js", "TypeScript", "Prisma", "PostgreSQL", "Socket.IO", "Binance API"],
+      "progress": 45,
+      "status": "in-development"
     }
   ]
 }
