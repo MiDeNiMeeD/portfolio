@@ -9,7 +9,8 @@
       "description": "Une plateforme de trading crypto autonome dotée d'un tableau de bord de contrôle en temps réel : données de marché Binance, indicateurs, scanner de signaux et flux d'événements live. Le M1 (pipeline de données + dashboard) est terminé ; le comité de décision et le moteur de risque/exécution arrivent au M2, suivis du ML et du backtesting.",
       "tech": ["NestJS", "Next.js", "TypeScript", "Prisma", "PostgreSQL", "Socket.IO", "Binance API"],
       "progress": 45,
-      "status": "in-development"
+      "status": "in-development",
+      "image": "/projects/mideni-trade.png"
     }
   ]
 }
