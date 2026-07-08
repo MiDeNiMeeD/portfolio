@@ -6,6 +6,7 @@ description: "Une version PvP temps réel et mobile-first du classique Bulls & C
 status: "completed"
 featured: true
 github: "https://github.com/MiDeNiMeeD/Bulls-Cows"
+image: "/projects/bulls-cows.png"
 techStack:
   - category: "Frontend"
     items: ["React 18", "Vite", "Tailwind CSS", "Zustand", "Client Socket.IO", "PWA (mobile-first)"]

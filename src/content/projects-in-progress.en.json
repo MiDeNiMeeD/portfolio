@@ -9,7 +9,8 @@
       "description": "A services marketplace SPA connecting clients with technicians. React + TypeScript + Tailwind, with client/technician/admin roles, publications, and in-app contact.",
       "tech": ["React", "TypeScript", "Tailwind CSS"],
       "progress": 70,
-      "status": "in-development"
+      "status": "in-development",
+      "image": "/projects/shoofli.png"
     }
   ]
 }

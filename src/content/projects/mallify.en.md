@@ -6,6 +6,7 @@ description: "A full-stack e-commerce marketplace decomposed into 18+ independen
 status: "completed"
 featured: true
 github: "https://github.com/MiDeNiMeeD/Mallify"
+image: "/projects/mallify.png"
 techStack:
   - category: "Architecture"
     items: ["Microservices (18+ services)", "Event-driven", "Multi-role", "Scalable by design"]

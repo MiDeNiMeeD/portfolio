@@ -6,6 +6,7 @@ description: "Une marketplace e-commerce full-stack décomposée en plus de 18 s
 status: "completed"
 featured: true
 github: "https://github.com/MiDeNiMeeD/Mallify"
+image: "/projects/mallify.png"
 techStack:
   - category: "Architecture"
     items: ["Microservices (18+ services)", "Orientée événements", "Multi-rôles", "Scalable par conception"]

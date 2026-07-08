@@ -6,6 +6,7 @@ description: "A comprehensive platform for medical tourism: patients book proced
 status: "completed"
 featured: true
 github: "https://github.com/MiDeNiMeeD/MediFy"
+image: "/projects/medify.png"
 techStack:
   - category: "Frontend"
     items: ["React 18", "Tailwind CSS", "React Router", "Context API", "Dark / light mode"]

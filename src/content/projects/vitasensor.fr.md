@@ -6,6 +6,7 @@ description: "Une plateforme h√¥pital intelligent full-stack : suivi en temps r√
 status: "completed"
 featured: true
 github: "https://github.com/MiDeNiMeeD/VitaSensor"
+image: "/projects/vitasensor.png"
 techStack:
   - category: "Frontend"
     items: ["React 18", "TypeScript", "Tailwind CSS", "Zustand", "React Router", "Recharts", "Axios"]

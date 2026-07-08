@@ -29,6 +29,7 @@ export interface ProjectFrontmatter {
   featured: boolean;
   github: string;
   demo?: string;
+  image?: string;
   techStack: TechStackCategory[];
   architectureFlow: ArchitectureFlowColumn[];
   architectureSummary: string[];
@@ -45,4 +46,5 @@ export interface InProgressProject {
   tech: string[];
   progress: number;
   status: "coming-soon" | "in-development";
+  image?: string;
 }

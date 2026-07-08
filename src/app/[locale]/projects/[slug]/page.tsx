@@ -32,7 +32,11 @@ export async function generateMetadata({
     title: project.name,
     description: project.description,
     alternates: { languages },
-    openGraph: { title: project.name, description: project.description },
+    openGraph: {
+      title: project.name,
+      description: project.description,
+      ...(project.image ? { images: [{ url: project.image }] } : {}),
+    },
   };
 }
 

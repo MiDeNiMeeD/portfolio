@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
@@ -51,6 +52,21 @@ export function CaseStudyHero({ project }: { project: Project }) {
           )}
         </div>
       </Reveal>
+
+      {project.image && (
+        <Reveal delay={0.15}>
+          <div className="relative mt-12 aspect-video w-full overflow-hidden rounded-[var(--radius-lg)] border border-[var(--card-border)]">
+            <Image
+              src={project.image}
+              alt={project.name}
+              fill
+              priority
+              sizes="(max-width: 1152px) 100vw, 1152px"
+              className="object-cover"
+            />
+          </div>
+        </Reveal>
+      )}
     </section>
   );
 }

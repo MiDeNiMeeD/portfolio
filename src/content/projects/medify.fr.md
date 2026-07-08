@@ -6,6 +6,7 @@ description: "Une plateforme complète de tourisme médical : les patients rése
 status: "completed"
 featured: true
 github: "https://github.com/MiDeNiMeeD/MediFy"
+image: "/projects/medify.png"
 techStack:
   - category: "Frontend"
     items: ["React 18", "Tailwind CSS", "React Router", "Context API", "Mode sombre / clair"]

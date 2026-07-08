@@ -6,6 +6,7 @@ description: "A mobile-first, real-time PvP take on the classic Bulls & Cows gam
 status: "completed"
 featured: true
 github: "https://github.com/MiDeNiMeeD/Bulls-Cows"
+image: "/projects/bulls-cows.png"
 techStack:
   - category: "Frontend"
     items: ["React 18", "Vite", "Tailwind CSS", "Zustand", "Socket.IO client", "PWA (mobile-first)"]

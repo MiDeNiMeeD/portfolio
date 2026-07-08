@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Placeholder } from "@/components/common/placeholder";
 import { Badge } from "@/components/ui/badge";
@@ -9,7 +10,19 @@ export function InProgressCard({ project }: { project: InProgressProject }) {
 
   return (
     <div className="overflow-hidden rounded-[var(--radius-lg)] border border-[var(--card-border)] bg-[var(--card)] opacity-90">
-      <Placeholder label={project.name} icon="Hammer" className="rounded-none border-0 border-b" />
+      {project.image ? (
+        <div className="relative aspect-video w-full overflow-hidden border-b border-[var(--card-border)]">
+          <Image
+            src={project.image}
+            alt={project.name}
+            fill
+            sizes="(max-width: 640px) 100vw, 33vw"
+            className="object-cover"
+          />
+        </div>
+      ) : (
+        <Placeholder label={project.name} icon="Hammer" className="rounded-none border-0 border-b" />
+      )}
       <div className="p-6">
         <div className="mb-3 flex items-center justify-between gap-2">
           <Badge variant={project.status === "in-development" ? "warning" : "outline"}>
