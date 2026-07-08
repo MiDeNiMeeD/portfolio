@@ -37,7 +37,7 @@
   "Experience": {
     "eyebrow": "Parcours",
     "title": "Expérience professionnelle",
-    "description": "Du développement backend à une expertise ciblée en qualité logicielle et en tests.",
+    "description": "Construire des produits full-stack — backend, frontend et DevOps — avec la qualité comme fil conducteur.",
     "current": "En cours",
     "selfDirected": "Auto-formation",
     "viewCaseStudy": "Voir l'étude de cas"
@@ -49,8 +49,8 @@
   },
   "Skills": {
     "eyebrow": "Compétences",
-    "title": "Une boîte à outils complète, du backend au produit fini",
-    "description": "Technologies et pratiques utilisées régulièrement.",
+    "title": "Une boîte à outils full-stack, de l'architecture au produit livré",
+    "description": "Technologies et pratiques que j'utilise pour construire, livrer et tester des applications réelles.",
     "certifications": "Certifications",
     "obtained": "Obtenue",
     "inProgress": "En cours"
@@ -58,7 +58,7 @@
   "FeaturedProjects": {
     "eyebrow": "Projets",
     "title": "Études de cas techniques",
-    "description": "Deux systèmes backend analysés en profondeur : architecture, patterns et arbitrages réels.",
+    "description": "Des systèmes réels analysés en profondeur : architecture, stack technique et arbitrages associés.",
     "viewAll": "Tous les projets"
   },
   "Contact": {

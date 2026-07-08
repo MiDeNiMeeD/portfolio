@@ -1,73 +1,45 @@
 {
+  "_meta": {
+    "note": "⚠️ REPLACE_ME — Claude ne pouvait pas connaître votre parcours professionnel réel. Les entrées ci-dessous sont des PLACEHOLDERS avec vos vrais projets GitHub liés via projectSlug. Remplacez les noms d'entreprise, lieux, périodes et bullets par votre expérience réelle (stages, emplois, freelance). Gardez ce fichier synchronisé avec experience.en.json. Mettez current:true sur votre poste actuel. projectSlug (optionnel) lie une entrée à une étude de cas dans src/content/projects/."
+  },
   "items": [
     {
-      "id": "qa-specialization",
-      "title": "Spécialisation Qualité Logicielle & Tests (auto-formation)",
-      "company": null,
-      "location": null,
-      "period": "Juin 2026 — Présent",
+      "id": "building-projects",
+      "title": "Ingénieur logiciel full-stack — Projets personnels & open-source",
+      "company": "Auto-formation",
+      "location": "REPLACE_ME",
+      "period": "REPLACE_ME — Présent",
       "current": true,
       "bullets": [
-        "Préparation de la certification ISTQB Foundation Level",
-        "Approfondissement de l'automatisation des tests avec Selenium, Postman et JUnit",
-        "Ce portfolio conçu comme un projet d'ingénierie à part entière (Next.js, TypeScript, architecture front)"
+        "Conception et livraison d'applications full-stack de bout en bout : backends distribués (Node.js, Fastify, Spring Boot), frontends React/TypeScript, Docker & CI/CD",
+        "Développement de systèmes temps réel (Socket.IO), de microservices orientés événements et d'une plateforme IoT de monitoring dopée à l'IA (LSTM, Random Forest)",
+        "Préparation de la certification ISTQB Foundation Level, avec application de l'automatisation des tests (Selenium, Postman, JUnit) sur les projets"
       ]
     },
     {
-      "id": "cdi-polydron",
-      "title": "Ingénieur Backend Java — Microservices",
-      "company": "Sodexo (via Polydron Labs)",
-      "location": "Paris, France",
-      "period": "Janvier 2025 — Juin 2026",
+      "id": "final-year-project",
+      "title": "REPLACE_ME — Ingénieur logiciel (ex. Projet de fin d'études / Stage)",
+      "company": "REPLACE_ME (entreprise ou école)",
+      "location": "REPLACE_ME",
+      "period": "REPLACE_ME (ex. 2024 — 2025)",
       "current": false,
       "bullets": [
-        "Développement et maintenance de microservices Spring Boot au sein d'un environnement distribué",
-        "Optimisation des performances des APIs REST et renforcement de la résilience des services",
-        "Contribution à la conception de l'architecture backend et des systèmes distribués"
-      ]
-    },
-    {
-      "id": "pfe-polydron",
-      "title": "Stage de fin d'études — Ingénieur Backend Java",
-      "company": "Polydron Labs",
-      "location": "Paris, France",
-      "period": "Avril 2024 — Décembre 2024",
-      "current": false,
-      "bullets": [
-        "Conception et développement d'APIs REST avec Spring Boot, intégrées à PostgreSQL",
-        "Mise en place de pipelines CI/CD pour automatiser les déploiements",
-        "Amélioration continue de la qualité et de la stabilité des services backend"
-      ]
-    },
-    {
-      "id": "proxym",
-      "title": "Stage — Ingénieur Backend, Architecture & Microservices",
-      "company": "Proxym",
-      "location": "Sousse, Tunisie",
-      "period": "Juin 2023 — Septembre 2023",
-      "current": false,
-      "bullets": [
-        "Migration d'une application SaaS d'une architecture monolithique vers une architecture microservices",
-        "Découpage du système en services indépendants exposant des APIs REST (Spring Boot)",
-        "Mise en place d'une architecture distribuée avec Spring Cloud, RabbitMQ et une API Gateway",
-        "Collaboration étroite avec les équipes frontend pour l'intégration des fonctionnalités"
+        "REPLACE_ME — décrivez votre rôle et ce que vous avez construit",
+        "REPLACE_ME — technologies clés et responsabilités",
+        "REPLACE_ME — un résultat mesurable si possible"
       ],
-      "projectSlug": "project-flow"
+      "projectSlug": "vitasensor"
     },
     {
-      "id": "siteflow",
-      "title": "Stage — Ingénieur Backend, IoT & Event-Driven",
-      "company": "SiteFlow",
-      "location": "Sousse, Tunisie",
-      "period": "Mai 2022 — Septembre 2022",
+      "id": "experience-placeholder",
+      "title": "REPLACE_ME — Poste ou stage précédent",
+      "company": "REPLACE_ME",
+      "location": "REPLACE_ME",
+      "period": "REPLACE_ME",
       "current": false,
       "bullets": [
-        "Développement d'un backend Java pour le traitement de données IoT en temps réel",
-        "Mise en place d'une architecture orientée événements avec Apache Kafka",
-        "Conception d'APIs REST avec Spring Boot et persistance des données avec MongoDB",
-        "Conteneurisation des services avec Docker et couverture par tests unitaires (JUnit, Mockito)"
-      ],
-      "projectSlug": "smart-building-iot"
+        "REPLACE_ME — ajoutez ou supprimez des entrées selon votre CV"
+      ]
     }
   ]
 }

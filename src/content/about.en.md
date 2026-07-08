@@ -1,16 +1,16 @@
 ---
-headline: "Software Engineer passionate about quality and testing"
-focus: "Test automation, software quality & Agile methodologies"
-yearsNote: "Background in software engineering, driven by a commitment to quality excellence"
+headline: "Full-stack engineer who ships reliable products end to end"
+focus: "Distributed backends, modern frontends, DevOps & AI/ML — with quality baked in"
+yearsNote: "Software engineer building real-world applications, from architecture to deployment"
 note: "Editable content."
 ---
 
-I'm a software engineer passionate about software quality and the craft of building reliable products. I believe robust software comes as much from clean code as from a rigorous testing strategy, which is why I put quality at the heart of every project I work on.
+I'm a full-stack software engineer who enjoys building complete products — from the distributed backend all the way to the interface people actually use. I like taking an idea, designing a solid architecture around it, and carrying it through to a running, deployed system.
 
-I've built solid expertise in test automation with Selenium, Postman, and JUnit, covering functional testing, API testing, and continuous integration test suites. My understanding of code lets me design relevant test strategies, anticipate risk areas, and communicate effectively with development teams.
+On the backend I work with microservices and event-driven architectures (Node.js, Express, Fastify, Spring Boot), REST APIs, and both SQL and NoSQL databases (PostgreSQL, MongoDB, Redis). On the frontend I build with React, TypeScript, and Tailwind CSS. I containerize and ship with Docker and CI/CD pipelines, and I've explored AI/ML in production settings — real-time predictions with LSTM and classification models.
 
-I thrive in Agile environments, working closely with developers and product owners to bake quality into the process from the earliest stages of development, rather than treating it as a final checkbox.
+Quality isn't a phase I bolt on at the end — it's how I build. My testing background (Selenium, Postman, JUnit, plus manual and exploratory testing) shapes the way I design systems: I anticipate failure modes, validate inputs at the edges, and write code that's meant to be tested. I'm also preparing the ISTQB Foundation Level certification to sharpen the theory behind that practice.
 
-I'm currently preparing for the ISTQB Foundation Level certification, strengthening the theoretical foundations behind a practice that's already solid.
+I'm most at home in Agile teams, collaborating closely with other developers to turn requirements into dependable software — and I care as much about the robustness of what I ship as about the features it delivers.
 
-I'm looking for a QA engineer role within a dynamic team, where I can put my developer's eye to work in service of product quality.
+I'm looking for a role where I can build full-stack products with a strong engineering culture, and put my eye for quality to work on things people rely on.

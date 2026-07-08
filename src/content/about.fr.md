@@ -1,16 +1,16 @@
 ---
-headline: "Ingénieur logiciel passionné par la qualité et les tests"
-focus: "Automatisation des tests, qualité logicielle & méthodologies Agile"
-yearsNote: "Formation en ingénierie logicielle, engagement constant pour l'excellence qualité"
+headline: "Ingénieur full-stack qui livre des produits fiables de bout en bout"
+focus: "Backends distribués, frontends modernes, DevOps & IA/ML — avec la qualité intégrée"
+yearsNote: "Ingénieur logiciel qui construit des applications réelles, de l'architecture au déploiement"
 note: "Contenu éditable."
 ---
 
-Je suis un ingénieur logiciel passionné par la qualité logicielle et l'art de construire des produits fiables. Convaincu qu'un logiciel robuste se construit autant par du code propre que par une stratégie de test rigoureuse, je place la qualité au cœur de chaque projet sur lequel je travaille.
+Je suis un ingénieur logiciel full-stack qui aime construire des produits complets — du backend distribué jusqu'à l'interface réellement utilisée par les utilisateurs. J'aime partir d'une idée, concevoir une architecture solide autour, et la mener jusqu'à un système qui tourne et qui est déployé.
 
-J'ai développé une solide expertise dans l'automatisation des tests avec Selenium, Postman et JUnit, couvrant aussi bien les tests fonctionnels que les tests d'API et d'intégration continue. Ma compréhension du code me permet de concevoir des stratégies de test pertinentes, d'anticiper les zones de risque et de dialoguer efficacement avec les équipes de développement.
+Côté backend, je travaille avec des architectures microservices et orientées événements (Node.js, Express, Fastify, Spring Boot), des APIs REST, et des bases de données SQL comme NoSQL (PostgreSQL, MongoDB, Redis). Côté frontend, je développe avec React, TypeScript et Tailwind CSS. Je conteneurise et je déploie avec Docker et des pipelines CI/CD, et j'ai exploré l'IA/ML en conditions réelles — prédictions en temps réel avec des modèles LSTM et de classification.
 
-J'évolue naturellement dans des environnements Agile, où je collabore étroitement avec développeurs et product owners pour intégrer la qualité dès les premières étapes du cycle de développement, plutôt que de la traiter comme une simple vérification finale.
+La qualité n'est pas une étape que je rajoute à la fin — c'est ma manière de construire. Mon expérience du test (Selenium, Postman, JUnit, ainsi que les tests manuels et exploratoires) façonne ma façon de concevoir les systèmes : j'anticipe les modes de défaillance, je valide les entrées aux frontières, et j'écris du code pensé pour être testé. Je prépare également la certification ISTQB Foundation Level pour renforcer la théorie derrière cette pratique.
 
-Actuellement en préparation de la certification ISTQB Foundation Level, je consolide mes bases théoriques pour renforcer une pratique déjà solide du test logiciel.
+Je suis particulièrement à l'aise dans les équipes Agile, en collaboration étroite avec d'autres développeurs, pour transformer des besoins en logiciels fiables — et je me soucie autant de la robustesse de ce que je livre que des fonctionnalités que cela apporte.
 
-Je suis à la recherche d'un poste d'ingénieur QA au sein d'une équipe dynamique, où je pourrai mettre mon regard de développeur au service de la qualité produit.
+Je recherche un poste où je pourrai construire des produits full-stack au sein d'une forte culture d'ingénierie, et mettre mon regard pour la qualité au service de choses sur lesquelles les gens comptent.

@@ -1,34 +1,49 @@
 {
   "_meta": {
-    "note": "Niveaux (0-100) à ajuster librement — estimés à partir de la profondeur d'usage observée dans project-flow (Java/Spring/Microservices/Docker/REST) et smart-building-iot-java (IoT/MQTT/Kafka), complétés par des niveaux par défaut raisonnables pour les compétences non démontrées dans ces deux dépôts (JavaFX, Python, Node.js, Cloud...). Le niveau n'est plus affiché visuellement, il sert uniquement à trier chaque catégorie (du plus maîtrisé au moins maîtrisé). L'ordre des catégories suit l'ordre de première apparition dans le tableau — 'QA & Tests' est placé en premier intentionnellement. 'certifications' alimente le bloc certifications affiché sous les compétences : status = 'in-progress' ou 'obtained', icon = nom d'icône Lucide (PascalCase)."
+    "note": "Niveaux (0-100) à AJUSTER LIBREMENT — ce sont des estimations de Claude déduites des dépôts GitHub réels (VitaSensor, Bulls-Cows, Mallify, MediFy, Shoofli, devops, project-flow) ; adaptez-les à votre propre auto-évaluation. Le niveau n'est plus affiché visuellement, il sert uniquement à trier chaque catégorie (du plus maîtrisé au moins maîtrisé). L'ordre des catégories suit l'ordre de première apparition dans le tableau. Positionnement full-stack : Backend & Frontend en tête, QA & Tests conservé comme thème fort. icon = clé définie dans src/components/common/tech-icon.tsx (ajoutez-y une entrée pour tout nouvel outil). 'certifications' alimente le bloc sous les compétences : status = 'in-progress' ou 'obtained', icon = nom d'icône Lucide (PascalCase)."
   },
   "skills": [
-    { "name": "Selenium", "category": "QA & Tests", "level": 78, "levelLabel": "advanced", "icon": "selenium" },
-    { "name": "Playwright", "category": "QA & Tests", "level": 70, "levelLabel": "proficient", "icon": "playwright" },
-    { "name": "Postman", "category": "QA & Tests", "level": 82, "levelLabel": "advanced", "icon": "postman" },
-    { "name": "JUnit", "category": "QA & Tests", "level": 85, "levelLabel": "advanced", "icon": "junit" },
-    { "name": "Mockito", "category": "QA & Tests", "level": 78, "levelLabel": "advanced", "icon": "mockito" },
-    { "name": "Tests manuels & exploratoires", "category": "QA & Tests", "level": 75, "levelLabel": "advanced", "icon": "bug" },
-    { "name": "Conception de cas de test (ISTQB)", "category": "QA & Tests", "level": 68, "levelLabel": "proficient", "icon": "test-design" },
-    { "name": "Méthodologies Agile", "category": "QA & Tests", "level": 80, "levelLabel": "advanced", "icon": "agile" },
-    { "name": "Java", "category": "Backend", "level": 90, "levelLabel": "expert", "icon": "java" },
-    { "name": "Spring / Spring Boot", "category": "Backend", "level": 88, "levelLabel": "expert", "icon": "spring" },
+    { "name": "Node.js", "category": "Backend", "level": 85, "levelLabel": "advanced", "icon": "nodejs" },
+    { "name": "Express", "category": "Backend", "level": 82, "levelLabel": "advanced", "icon": "express" },
+    { "name": "Fastify", "category": "Backend", "level": 72, "levelLabel": "proficient", "icon": "fastify" },
+    { "name": "Java / Spring Boot", "category": "Backend", "level": 80, "levelLabel": "advanced", "icon": "spring" },
     { "name": "Microservices", "category": "Backend", "level": 82, "levelLabel": "advanced", "icon": "microservices" },
     { "name": "REST API", "category": "Backend", "level": 88, "levelLabel": "expert", "icon": "rest-api" },
-    { "name": "Node.js", "category": "Backend", "level": 65, "levelLabel": "proficient", "icon": "nodejs" },
-    { "name": "Python", "category": "Backend", "level": 60, "levelLabel": "proficient", "icon": "python" },
-    { "name": "SQL", "category": "Backend", "level": 75, "levelLabel": "advanced", "icon": "sql" },
-    { "name": "JavaFX", "category": "Backend", "level": 55, "levelLabel": "proficient", "icon": "javafx" },
-    { "name": "React", "category": "Frontend", "level": 78, "levelLabel": "advanced", "icon": "react" },
+    { "name": "Python", "category": "Backend", "level": 68, "levelLabel": "proficient", "icon": "python" },
+
+    { "name": "React", "category": "Frontend", "level": 85, "levelLabel": "advanced", "icon": "react" },
+    { "name": "TypeScript", "category": "Frontend", "level": 85, "levelLabel": "advanced", "icon": "typescript" },
+    { "name": "JavaScript", "category": "Frontend", "level": 85, "levelLabel": "advanced", "icon": "javascript" },
     { "name": "Next.js", "category": "Frontend", "level": 76, "levelLabel": "advanced", "icon": "nextjs" },
-    { "name": "TypeScript", "category": "Frontend", "level": 78, "levelLabel": "advanced", "icon": "typescript" },
-    { "name": "Tailwind CSS", "category": "Frontend", "level": 80, "levelLabel": "advanced", "icon": "tailwind" },
-    { "name": "Docker", "category": "DevOps & Cloud", "level": 80, "levelLabel": "advanced", "icon": "docker" },
-    { "name": "CI/CD", "category": "DevOps & Cloud", "level": 65, "levelLabel": "proficient", "icon": "cicd" },
-    { "name": "Cloud", "category": "DevOps & Cloud", "level": 60, "levelLabel": "proficient", "icon": "cloud" },
-    { "name": "Linux", "category": "DevOps & Cloud", "level": 75, "levelLabel": "advanced", "icon": "linux" },
-    { "name": "Git & GitHub", "category": "DevOps & Cloud", "level": 85, "levelLabel": "advanced", "icon": "git" },
-    { "name": "IoT (MQTT / Kafka)", "category": "Data & IoT", "level": 70, "levelLabel": "proficient", "icon": "iot" }
+    { "name": "Tailwind CSS", "category": "Frontend", "level": 82, "levelLabel": "advanced", "icon": "tailwind" },
+
+    { "name": "Selenium", "category": "QA & Tests", "level": 75, "levelLabel": "advanced", "icon": "selenium" },
+    { "name": "Postman", "category": "QA & Tests", "level": 80, "levelLabel": "advanced", "icon": "postman" },
+    { "name": "JUnit", "category": "QA & Tests", "level": 78, "levelLabel": "advanced", "icon": "junit" },
+    { "name": "Mockito", "category": "QA & Tests", "level": 72, "levelLabel": "proficient", "icon": "mockito" },
+    { "name": "Tests manuels & exploratoires", "category": "QA & Tests", "level": 75, "levelLabel": "advanced", "icon": "bug" },
+    { "name": "Conception de cas de test (ISTQB)", "category": "QA & Tests", "level": 65, "levelLabel": "proficient", "icon": "test-design" },
+    { "name": "Méthodologies Agile", "category": "QA & Tests", "level": 80, "levelLabel": "advanced", "icon": "agile" },
+
+    { "name": "PostgreSQL", "category": "Databases", "level": 80, "levelLabel": "advanced", "icon": "postgresql" },
+    { "name": "MongoDB", "category": "Databases", "level": 80, "levelLabel": "advanced", "icon": "mongodb" },
+    { "name": "Redis", "category": "Databases", "level": 70, "levelLabel": "proficient", "icon": "redis" },
+    { "name": "Prisma", "category": "Databases", "level": 72, "levelLabel": "proficient", "icon": "prisma" },
+    { "name": "SQL", "category": "Databases", "level": 78, "levelLabel": "advanced", "icon": "sql" },
+
+    { "name": "Docker", "category": "DevOps & Cloud", "level": 85, "levelLabel": "advanced", "icon": "docker" },
+    { "name": "CI/CD", "category": "DevOps & Cloud", "level": 72, "levelLabel": "proficient", "icon": "cicd" },
+    { "name": "Jenkins", "category": "DevOps & Cloud", "level": 65, "levelLabel": "proficient", "icon": "jenkins" },
+    { "name": "Kubernetes", "category": "DevOps & Cloud", "level": 60, "levelLabel": "proficient", "icon": "kubernetes" },
+    { "name": "Linux", "category": "DevOps & Cloud", "level": 78, "levelLabel": "advanced", "icon": "linux" },
+    { "name": "Git & GitHub", "category": "DevOps & Cloud", "level": 88, "levelLabel": "expert", "icon": "git" },
+
+    { "name": "Socket.IO (temps réel)", "category": "Realtime & Messaging", "level": 78, "levelLabel": "advanced", "icon": "socketio" },
+    { "name": "Apache Kafka", "category": "Realtime & Messaging", "level": 68, "levelLabel": "proficient", "icon": "kafka" },
+    { "name": "RabbitMQ", "category": "Realtime & Messaging", "level": 66, "levelLabel": "proficient", "icon": "rabbitmq" },
+
+    { "name": "TensorFlow / Keras (LSTM)", "category": "AI & ML", "level": 65, "levelLabel": "proficient", "icon": "tensorflow" },
+    { "name": "scikit-learn", "category": "AI & ML", "level": 65, "levelLabel": "proficient", "icon": "scikit-learn" }
   ],
   "certifications": [
     {

@@ -1,15 +1,15 @@
 {
   "_meta": {
-    "note": "Add new objects to 'items' to make a project appear in the 'Projects in Progress' section — mirror any change made in the .fr.json file so both languages stay in sync. status: 'coming-soon' | 'in-development'. progress: 0-100."
+    "note": "Add objects to 'items' to show a project in the 'Projects in Progress' section — mirror any change in the .fr.json file. status: 'coming-soon' | 'in-development'. progress: 0-100. slug is currently informational only (no dedicated case-study page)."
   },
   "items": [
     {
-      "slug": "next-project",
-      "name": "Next project",
-      "description": "A new project is being prepared — details will be published once the initial architecture is stabilized.",
-      "tech": ["To be defined"],
-      "progress": 10,
-      "status": "coming-soon"
+      "slug": "shoofli",
+      "name": "Shoofli",
+      "description": "A services marketplace SPA connecting clients with technicians. React + TypeScript + Tailwind, with client/technician/admin roles, publications, and in-app contact.",
+      "tech": ["React", "TypeScript", "Tailwind CSS"],
+      "progress": 70,
+      "status": "in-development"
     }
   ]
 }

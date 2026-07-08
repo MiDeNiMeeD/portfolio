@@ -1,15 +1,15 @@
 {
   "_meta": {
-    "note": "Ajoute librement de nouveaux objets à 'items' pour faire apparaître un projet dans la section 'Projects in Progress' — aucune autre modification n'est nécessaire. status: 'coming-soon' | 'in-development'. progress: 0-100."
+    "note": "Ajoutez des objets à 'items' pour afficher un projet dans la section 'Projets en cours' — reflétez tout changement dans le fichier .en.json. status : 'coming-soon' | 'in-development'. progress : 0-100. slug est purement informatif pour l'instant (pas de page d'étude de cas dédiée)."
   },
   "items": [
     {
-      "slug": "next-project",
-      "name": "Prochain projet",
-      "description": "Un nouveau projet est en cours de préparation — les détails seront publiés dès que l'architecture initiale sera stabilisée.",
-      "tech": ["À définir"],
-      "progress": 10,
-      "status": "coming-soon"
+      "slug": "shoofli",
+      "name": "Shoofli",
+      "description": "Une SPA marketplace de services mettant en relation clients et techniciens. React + TypeScript + Tailwind, avec rôles client/technicien/admin, publications et contact in-app.",
+      "tech": ["React", "TypeScript", "Tailwind CSS"],
+      "progress": 70,
+      "status": "in-development"
     }
   ]
 }

@@ -1,22 +1,22 @@
 {
-  "name": "Khalil BEN ROMDHANE",
-  "shortName": "Khalil BR",
-  "title": "QA & QC Engineer | ISTQB en préparation | Software Engineer",
+  "name": "Mohamed Amine MIDENI",
+  "shortName": "Mohamed Amine",
+  "title": "Full-Stack Software Engineer | AI/ML & DevOps | Quality-Driven",
   "tagline": {
-    "fr": "Ingénieur logiciel en reconversion vers la QA. Ma compréhension du code me permet de concevoir des tests plus pertinents et de dialoguer efficacement avec les développeurs. Automatisation des tests avec Selenium, Postman et JUnit, méthodologies Agile. Certification ISTQB Foundation Level en préparation.",
-    "en": "Software engineer transitioning into QA. My coding background lets me design more relevant tests and collaborate closely with developers. Test automation with Selenium, Postman, and JUnit, Agile methodologies. Currently preparing the ISTQB Foundation Level certification."
+    "fr": "Ingénieur logiciel full-stack, je conçois et déploie des applications de bout en bout — du backend distribué (microservices, event-driven) au frontend React/TypeScript, avec une forte culture DevOps (Docker, CI/CD) et IA/ML. La qualité et les tests sont au cœur de ma manière de construire des produits fiables.",
+    "en": "Full-stack software engineer building and shipping applications end to end — from distributed backends (microservices, event-driven) to React/TypeScript frontends, with a strong DevOps culture (Docker, CI/CD) and AI/ML. Quality and testing are at the core of how I build reliable products."
   },
   "shortTagline": {
-    "fr": "Software Engineer — QA & QC Engineer",
-    "en": "Software Engineer — QA & QC Engineer"
+    "fr": "Full-Stack Engineer — Backend, Frontend, DevOps & IA",
+    "en": "Full-Stack Engineer — Backend, Frontend, DevOps & AI"
   },
-  "location": "France",
-  "email": "benrm.khalil@gmail.com",
-  "phone": "+33 7 59 30 07 47",
-  "whatsapp": "+33 7 59 30 07 47",
-  "github": "https://github.com/Khalilbenrm",
-  "githubUsername": "Khalilbenrm",
-  "linkedin": "https://www.linkedin.com/in/khalil-ben-romdhane-3719462b8/",
+  "location": "REPLACE_ME (e.g. Tunisia / France)",
+  "email": "REPLACE_ME@example.com",
+  "phone": "+000 00 00 00 00",
+  "whatsapp": "+000 00 00 00 00",
+  "github": "https://github.com/MiDeNiMeeD",
+  "githubUsername": "MiDeNiMeeD",
+  "linkedin": "https://www.linkedin.com/in/REPLACE_ME/",
   "cvUrl": {
     "fr": "/cv-fr.pdf",
     "en": "/cv-en.pdf"
@@ -24,6 +24,6 @@
   "photoUrl": "/personal-photo.png",
   "domain": "https://your-domain.com",
   "_meta": {
-    "note": "Fichier de configuration central, partagé entre les deux langues. linkedin='#' et domain sont des placeholders à remplacer avant mise en production. phone (lien tel:) et whatsapp (lien wa.me, chiffres uniquement extraits) sont deux numéros distincts et indépendants — whatsapp est encore un placeholder à remplacer. shortName est une version courte de name utilisée uniquement pour le titre d'onglet (metadata title + titre dynamique par section) ; name reste utilisé pour le Hero et le footer. tagline/shortTagline/cvUrl ont une variante par langue (fr/en) ; les autres champs sont partagés. Le menu de navigation est traduit dans messages/fr.json et messages/en.json (namespace 'Nav'), pas ici. Le widget 'chasse aux bugs' de la section About est configuré via messages/fr.json et messages/en.json (namespace 'About')."
+    "note": "Fichier de configuration central, partagé entre les deux langues. CHAMPS À REMPLACER (marqués REPLACE_ME) : location, email, phone, whatsapp, linkedin, domain — ce sont des données personnelles que Claude ne pouvait pas connaître. github/githubUsername sont réels (compte MiDeNiMeeD). ÉGALEMENT À REMPLACER MANUELLEMENT : les fichiers public/cv-fr.pdf, public/cv-en.pdf et public/personal-photo.png (+ personal-photo-cutout.png) appartiennent encore au template — remplacez-les par vos propres fichiers. phone (lien tel:) et whatsapp (lien wa.me) sont deux numéros distincts. shortName sert au titre d'onglet ; name est utilisé dans le Hero et le footer. tagline/shortTagline/cvUrl ont une variante fr/en."
   }
 }
