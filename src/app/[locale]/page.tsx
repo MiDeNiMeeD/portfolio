@@ -13,6 +13,7 @@ import {
   getSkills,
   getCertifications,
   getFeaturedProjects,
+  getInProgressProjects,
   getAboutContent,
   getExperience,
   getEducation,
@@ -31,6 +32,7 @@ export default async function Home({
   const skills = getSkills();
   const certifications = getCertifications();
   const projects = getFeaturedProjects(locale);
+  const inProgress = getInProgressProjects(locale);
   const about = getAboutContent(locale);
   const experience = getExperience(locale);
   const education = getEducation(locale);
@@ -48,7 +50,7 @@ export default async function Home({
       <Separator />
       <Skills skills={skills} certifications={certifications} />
       <Separator />
-      <FeaturedProjects projects={projects} />
+      <FeaturedProjects projects={projects} inProgress={inProgress} />
       <Separator />
       <Contact site={site} />
     </>

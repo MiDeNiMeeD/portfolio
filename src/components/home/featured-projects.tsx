@@ -4,10 +4,18 @@ import { SectionHeading } from "@/components/common/section-heading";
 import { Reveal } from "@/components/common/reveal";
 import { Button } from "@/components/ui/button";
 import { ProjectCard } from "@/components/projects/project-card";
-import type { Project } from "@/types/project";
+import { InProgressCard } from "@/components/projects/in-progress-card";
+import type { Project, InProgressProject } from "@/types/project";
 
-export function FeaturedProjects({ projects }: { projects: Project[] }) {
+export function FeaturedProjects({
+  projects,
+  inProgress = [],
+}: {
+  projects: Project[];
+  inProgress?: InProgressProject[];
+}) {
   const t = useTranslations("FeaturedProjects");
+  const tp = useTranslations("ProjectsPage");
 
   return (
     <section id="projects" className="mx-auto max-w-6xl scroll-mt-24 px-6 py-24">
@@ -32,6 +40,19 @@ export function FeaturedProjects({ projects }: { projects: Project[] }) {
           </Reveal>
         ))}
       </div>
+
+      {inProgress.length > 0 && (
+        <div className="mt-20">
+          <SectionHeading eyebrow={tp("upcomingEyebrow")} title={tp("upcomingTitle")} />
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {inProgress.map((project, i) => (
+              <Reveal key={project.slug} delay={i * 0.1}>
+                <InProgressCard project={project} />
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      )}
     </section>
   );
 }
