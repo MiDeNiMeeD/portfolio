@@ -85,8 +85,8 @@ export function Header({ site }: { site: SiteConfig }) {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <div className="hidden items-center gap-2 xl:flex">
+        <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex items-center gap-2">
             <LanguageSwitcher />
             <ThemeToggle />
           </div>
@@ -133,10 +133,8 @@ export function Header({ site }: { site: SiteConfig }) {
                   {t(item.key)}
                 </Link>
               ))}
-              <div className="mt-2 flex items-center gap-2 px-3">
-                <LanguageSwitcher />
-                <ThemeToggle />
-                <Button href={site.cvUrl} variant="dark" size="sm" external className="flex-1">
+              <div className="mt-2 px-3">
+                <Button href={site.cvUrl} variant="dark" size="sm" external className="w-full">
                   {tHero("ctaCv")}
                   <Download className="h-3.5 w-3.5" />
                 </Button>
