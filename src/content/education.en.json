@@ -1,18 +1,19 @@
 {
-  "_meta": {
-    "note": "⚠️ REPLACE_ME — Claude could not know your real academic background. Replace school, degree, and period with your actual education. Keep in sync with education.fr.json.",
-    "hint": "Most recent first."
-  },
   "items": [
     {
-      "school": "REPLACE_ME — your university / engineering school",
-      "degree": "REPLACE_ME — e.g. Engineering degree in Software Engineering",
-      "period": "REPLACE_ME — e.g. 2021 — 2024"
+      "school": "EPI Digital School, Sousse",
+      "degree": "Engineering Degree in Software Engineering — Graduated with Excellent Honors",
+      "period": "2022 — 2025"
     },
     {
-      "school": "REPLACE_ME — earlier institution (optional)",
-      "degree": "REPLACE_ME — e.g. Preparatory cycle / Bachelor",
-      "period": "REPLACE_ME"
+      "school": "EPI Digital School, Sousse",
+      "degree": "Preparatory Cycle in Information and Communication Technologies (ICT)",
+      "period": "2020 — 2022"
+    },
+    {
+      "school": "Monastir Preparatory Institute for Engineering Studies (IPEIM)",
+      "degree": "Preparatory Engineering Studies",
+      "period": "2019 — 2020"
     }
   ]
 }

@@ -1,18 +1,19 @@
 {
-  "_meta": {
-    "note": "⚠️ REPLACE_ME — Claude ne pouvait pas connaître votre parcours académique réel. Remplacez école, diplôme et période par votre formation réelle. Gardez synchronisé avec education.en.json.",
-    "hint": "Le plus récent en premier."
-  },
   "items": [
     {
-      "school": "REPLACE_ME — votre université / école d'ingénieurs",
-      "degree": "REPLACE_ME — ex. Cycle ingénieur en génie logiciel",
-      "period": "REPLACE_ME — ex. 2021 — 2024"
+      "school": "EPI Digital School, Sousse",
+      "degree": "Cycle Ingénieur en Génie Logiciel — Diplômé avec Mention Excellent",
+      "period": "2022 — 2025"
     },
     {
-      "school": "REPLACE_ME — établissement précédent (optionnel)",
-      "degree": "REPLACE_ME — ex. Cycle préparatoire / Licence",
-      "period": "REPLACE_ME"
+      "school": "EPI Digital School, Sousse",
+      "degree": "Cycle Préparatoire en Technologies de l'Information et de la Communication (TIC)",
+      "period": "2020 — 2022"
+    },
+    {
+      "school": "Institut Préparatoire aux Études d'Ingénieurs de Monastir (IPEIM)",
+      "degree": "Études Préparatoires aux Écoles d'Ingénieurs",
+      "period": "2019 — 2020"
     }
   ]
-}
+} 
