@@ -27,7 +27,7 @@ export function getSkills(): Skill[] {
 }
 
 export function getCertifications(): Certification[] {
-  return (skillsJson as { certifications: Certification[] }).certifications;
+  return (skillsJson as { certifications?: Certification[] }).certifications ?? [];
 }
 
 export function getInProgressProjects(locale: Locale): InProgressProject[] {

@@ -16,13 +16,13 @@
   "whatsapp": "+216 24 905 669",
   "github": "https://github.com/MiDeNiMeeD",
   "githubUsername": "MiDeNiMeeD",
-  "linkedin": "https://www.linkedin.com/in/REPLACE_ME/",
+  "linkedin": "https://www.linkedin.com/in/mohamed-amine-mideni-2710a41b6/",
   "cvUrl": {
     "fr": "/cv-fr.pdf",
     "en": "/cv-en.pdf"
   },
   "photoUrl": "/personal-photo.png",
-  "domain": "https://your-domain.com",
+  "domain": "https://mideniportfolio.netlify.app",
   "_meta": {
     "note": "Fichier de configuration central, partagé entre les deux langues. CHAMPS À REMPLACER (marqués REPLACE_ME) : location, email, phone, whatsapp, linkedin, domain — ce sont des données personnelles que Claude ne pouvait pas connaître. github/githubUsername sont réels (compte MiDeNiMeeD). ÉGALEMENT À REMPLACER MANUELLEMENT : les fichiers public/cv-fr.pdf, public/cv-en.pdf et public/personal-photo.png (+ personal-photo-cutout.png) appartiennent encore au template — remplacez-les par vos propres fichiers. phone (lien tel:) et whatsapp (lien wa.me) sont deux numéros distincts. shortName sert au titre d'onglet ; name est utilisé dans le Hero et le footer. tagline/shortTagline/cvUrl ont une variante fr/en."
   }

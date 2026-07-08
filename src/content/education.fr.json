@@ -2,18 +2,18 @@
   "items": [
     {
       "school": "EPI Digital School, Sousse",
-      "degree": "Cycle Ingénieur en Génie Logiciel — Diplômé avec Mention Excellent",
-      "period": "2022 — 2025"
+      "degree": "Diplôme d'ingénieur en génie logiciel — Diplômé avec mention Très Bien",
+      "period": "2023 — 2026"
     },
     {
       "school": "EPI Digital School, Sousse",
-      "degree": "Cycle Préparatoire en Technologies de l'Information et de la Communication (TIC)",
+      "degree": "Cycle préparatoire en Technologies de l'Information et de la Communication (TIC)",
       "period": "2020 — 2022"
     },
     {
-      "school": "Institut Préparatoire aux Études d'Ingénieurs de Monastir (IPEIM)",
-      "degree": "Études Préparatoires aux Écoles d'Ingénieurs",
+      "school": "Institut Préparatoire aux Études d'Ingénieur de Monastir (IPEIM)",
+      "degree": "Classes préparatoires aux études d'ingénieur",
       "period": "2019 — 2020"
     }
   ]
-} 
+}

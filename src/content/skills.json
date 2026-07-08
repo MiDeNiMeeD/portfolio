@@ -22,7 +22,7 @@
     { "name": "JUnit", "category": "QA & Tests", "level": 78, "levelLabel": "advanced", "icon": "junit" },
     { "name": "Mockito", "category": "QA & Tests", "level": 72, "levelLabel": "proficient", "icon": "mockito" },
     { "name": "Tests manuels & exploratoires", "category": "QA & Tests", "level": 75, "levelLabel": "advanced", "icon": "bug" },
-    { "name": "Conception de cas de test (ISTQB)", "category": "QA & Tests", "level": 65, "levelLabel": "proficient", "icon": "test-design" },
+    { "name": "Conception de cas de test", "category": "QA & Tests", "level": 65, "levelLabel": "proficient", "icon": "test-design" },
     { "name": "Méthodologies Agile", "category": "QA & Tests", "level": 80, "levelLabel": "advanced", "icon": "agile" },
 
     { "name": "PostgreSQL", "category": "Databases", "level": 80, "levelLabel": "advanced", "icon": "postgresql" },
@@ -44,13 +44,6 @@
 
     { "name": "TensorFlow / Keras (LSTM)", "category": "AI & ML", "level": 65, "levelLabel": "proficient", "icon": "tensorflow" },
     { "name": "scikit-learn", "category": "AI & ML", "level": 65, "levelLabel": "proficient", "icon": "scikit-learn" }
-  ],
-  "certifications": [
-    {
-      "name": "ISTQB Foundation Level",
-      "issuer": "ISTQB",
-      "status": "in-progress",
-      "icon": "Award"
-    }
   ]
+ 
 }

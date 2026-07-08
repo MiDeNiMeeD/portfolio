@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "note": "⚠️ REPLACE_ME — Claude could not know your real professional history. The entries below are PLACEHOLDERS with your real GitHub projects linked via projectSlug. Replace company names, locations, periods, and bullets with your actual experience (internships, jobs, freelance). Keep this file in sync with experience.fr.json. Set current:true on your ongoing role. projectSlug (optional) links an entry to a case study in src/content/projects/.",
+    "note": "Real professional history for Mohamed Amine MIDENI. Keep this file in sync with experience.fr.json (same ids, same order, same current flags). projectSlug links an entry to a case study in src/content/projects/. VERIFY: exact months, cities, and company spellings (Codemize Solution / Midani IT) are best-effort — adjust as needed.",
     "note_fr": "Mirror any change in experience.fr.json."
   },
   "items": [
@@ -8,38 +8,67 @@
       "id": "building-projects",
       "title": "Full-Stack Software Engineer — Personal & Open-Source Projects",
       "company": "Self-directed",
-      "location": "REPLACE_ME",
-      "period": "REPLACE_ME — Present",
+      "location": "Sousse, Tunisia",
+      "period": "2024 — Present",
       "current": true,
       "bullets": [
         "Designed and shipped full-stack applications end to end: distributed backends (Node.js, Fastify, Spring Boot), React/TypeScript frontends, Docker & CI/CD",
         "Built real-time systems (Socket.IO), event-driven microservices, and an AI-powered IoT monitoring platform (LSTM, Random Forest)",
-        "Preparing the ISTQB Foundation Level certification while applying test automation (Selenium, Postman, JUnit) across projects"
+        "Applying test automation (Selenium, Postman, JUnit) and quality-first practices across projects"
       ]
     },
     {
-      "id": "final-year-project",
-      "title": "REPLACE_ME — Software Engineer (e.g. Final-Year Project / Internship)",
-      "company": "REPLACE_ME (company or school)",
-      "location": "REPLACE_ME",
-      "period": "REPLACE_ME (e.g. 2024 — 2025)",
+      "id": "pfe-codemize-mallify",
+      "title": "Full-Stack Software Engineer — End-of-Studies Internship (PFE)",
+      "company": "Codemize Solution",
+      "location": "Sousse, Tunisia",
+      "period": "2026",
       "current": false,
       "bullets": [
-        "REPLACE_ME — describe your role and what you built",
-        "REPLACE_ME — key technologies and responsibilities",
-        "REPLACE_ME — a measurable result or outcome if possible"
+        "End-of-studies internship (PFE): built Mallify, an event-driven e-commerce marketplace decomposed into 18+ independent microservices",
+        "Implemented services in Node.js with per-service MongoDB data ownership and event-driven communication through a message broker",
+        "Containerized every service with Docker & Docker Compose for independent deployment and service-by-service scaling"
+      ],
+      "projectSlug": "mallify"
+    },
+    {
+      "id": "summer-midani-vitasensor",
+      "title": "Full-Stack Software Engineer — Summer Internship",
+      "company": "Midani IT",
+      "location": "Sousse, Tunisia",
+      "period": "Summer 2025",
+      "current": false,
+      "bullets": [
+        "Summer internship: developed VitaSensor, a real-time smart-hospital platform streaming patient vital signs over WebSockets (Socket.IO)",
+        "Built a multi-role React/TypeScript frontend (admin, doctor, nurse) on a Node.js/Express + PostgreSQL (Prisma) backend with JWT authentication",
+        "Integrated Python AI/ML models (LSTM, Random Forest, Isolation Forest) to predict patient risk and drive a multi-level alerting workflow"
       ],
       "projectSlug": "vitasensor"
     },
     {
-      "id": "experience-placeholder",
-      "title": "REPLACE_ME — Previous role or internship",
-      "company": "REPLACE_ME",
-      "location": "REPLACE_ME",
-      "period": "REPLACE_ME",
+      "id": "pfa-codemize-shoofli",
+      "title": "Software Engineer — Annual Project Internship (PFA)",
+      "company": "Codemize Solution",
+      "location": "Sousse, Tunisia",
+      "period": "2025",
       "current": false,
       "bullets": [
-        "REPLACE_ME — add or remove entries as needed to match your CV"
+        "Annual project internship (PFA): built Shoofli, a role-based services marketplace connecting clients with local technicians",
+        "Developed a React + TypeScript single-page app with distinct client, technician, and admin experiences — publications, in-app contact, and notifications"
+      ],
+      "projectSlug": "shoofli"
+    },
+    {
+      "id": "freelance-web",
+      "title": "Freelance Full-Stack Web Developer",
+      "company": "Freelance / Independent",
+      "location": "Remote · Tunisia",
+      "period": "2021 — Present",
+      "current": true,
+      "bullets": [
+        "Delivered custom web platforms and applications for clients end to end — from conception and UI/UX design through development and deployment",
+        "Built restaurant platforms, a delivery application, and e-commerce websites tailored to each client's business",
+        "Managed the full project lifecycle independently: requirements gathering, design, frontend & backend development, and client delivery"
       ]
     }
   ]

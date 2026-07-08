@@ -9,7 +9,7 @@ Je suis un ingénieur logiciel full-stack qui aime construire des produits compl
 
 Côté backend, je travaille avec des architectures microservices et orientées événements (Node.js, Express, Fastify, Spring Boot), des APIs REST, et des bases de données SQL comme NoSQL (PostgreSQL, MongoDB, Redis). Côté frontend, je développe avec React, TypeScript et Tailwind CSS. Je conteneurise et je déploie avec Docker et des pipelines CI/CD, et j'ai exploré l'IA/ML en conditions réelles — prédictions en temps réel avec des modèles LSTM et de classification.
 
-La qualité n'est pas une étape que je rajoute à la fin — c'est ma manière de construire. Mon expérience du test (Selenium, Postman, JUnit, ainsi que les tests manuels et exploratoires) façonne ma façon de concevoir les systèmes : j'anticipe les modes de défaillance, je valide les entrées aux frontières, et j'écris du code pensé pour être testé. Je prépare également la certification ISTQB Foundation Level pour renforcer la théorie derrière cette pratique.
+La qualité n'est pas une étape que je rajoute à la fin — c'est ma manière de construire. Mon expérience du test (Selenium, Postman, JUnit, ainsi que les tests manuels et exploratoires) façonne ma façon de concevoir les systèmes : j'anticipe les modes de défaillance, je valide les entrées aux frontières, et j'écris du code pensé pour être testé.
 
 Je suis particulièrement à l'aise dans les équipes Agile, en collaboration étroite avec d'autres développeurs, pour transformer des besoins en logiciels fiables — et je me soucie autant de la robustesse de ce que je livre que des fonctionnalités que cela apporte.
 
