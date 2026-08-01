@@ -8,9 +8,18 @@
       "name": "Mideni Trade (IA Trader)",
       "description": "Une plateforme de trading crypto autonome dotée d'un tableau de bord de contrôle en temps réel : données de marché Binance, indicateurs, scanner de signaux et flux d'événements live. Le M1 (pipeline de données + dashboard) est terminé ; le comité de décision et le moteur de risque/exécution arrivent au M2, suivis du ML et du backtesting.",
       "tech": ["NestJS", "Next.js", "TypeScript", "Prisma", "PostgreSQL", "Socket.IO", "Binance API"],
-      "progress": 45,
+      "progress": 75,
       "status": "in-development",
       "image": "/projects/mideni-trade.png"
+    },
+    {
+      "slug": "mo7amy",
+      "name": "Mo7amy",
+      "description": "Une marketplace d'avocats pour la Tunisie : rechercher des avocats vérifiés par spécialité et par gouvernorat, puis réserver une consultation en présentiel, en visio ou par téléphone. Les avocats définissent des règles de disponibilité hebdomadaires, matérialisées en créneaux réservables concrets, et la réservation suit un flux « retenue puis confirmation » à l'abri des accès concurrents, tranché par une unique mise à jour atomique. La boucle marketplace est en place ; un assistant IA sur Atlas vector search est prévu ensuite.",
+      "tech": ["Next.js", "Express", "TypeScript", "MongoDB", "Mongoose", "JWT", "Zod"],
+      "progress": 45,
+      "status": "in-development",
+      "image": "/projects/mo7amy.png"
     }
   ]
 }

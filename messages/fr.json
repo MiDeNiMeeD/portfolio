@@ -125,6 +125,7 @@
     "cta": {
       "title": "Envie d'en savoir plus sur {name} ?",
       "description": "Le code source complet est disponible sur GitHub, avec l'historique et la configuration de déploiement.",
+      "descriptionPrivate": "Ce dépôt est privé, le code n'est donc pas public — je peux présenter l'architecture et le code sur demande.",
       "exploreCode": "Explorer le code",
       "otherProjects": "Autres projets"
     }

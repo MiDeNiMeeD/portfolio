@@ -27,7 +27,8 @@ export interface ProjectFrontmatter {
   description: string;
   status: ProjectStatus;
   featured: boolean;
-  github: string;
+  /** Omit for private repositories — the "source code" buttons are then hidden. */
+  github?: string;
   demo?: string;
   image?: string;
   techStack: TechStackCategory[];

@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Mohamed Amine MIDENI — CV</title>
+<style>
+  /* ------------------------------------------------------------------
+     Source for public/cv-fr.pdf. Render with:
+       chrome --headless --disable-gpu --no-pdf-header-footer \
+              --print-to-pdf=public/cv-fr.pdf docs/cv/cv-fr.html
+     Palette and typeface match the previous CV exactly (sampled from it):
+       #17191A ink · #5B615A muted · #3F8F68 sage · #E2F0E8 tint · #D8D5CC rule
+     ------------------------------------------------------------------ */
+  /* Explicit mm, not the `A4` keyword — headless Chrome ignores the keyword
+     and falls back to US Letter. */
+  @page { size: 210mm 297mm; margin: 0; }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --ink: #17191A;
+    --ink-soft: #33383A;
+    --muted: #5B615A;
+    --sage: #3F8F68;
+    --tint: #E2F0E8;
+    --rule: #D8D5CC;
+  }
+
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  body {
+    width: 210mm;
+    min-height: 297mm;
+    font-family: "Segoe UI", "Segoe UI Semibold", Arial, sans-serif;
+    font-size: 8.4pt;
+    line-height: 1.42;
+    color: var(--ink-soft);
+    background: #fff;
+  }
+
+  .page { padding: 13mm 13mm 11mm; }
+
+  /* ---------- header ---------- */
+  header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 8mm;
+    padding-bottom: 3.2mm;
+    border-bottom: 1.6pt solid var(--sage);
+  }
+  .name {
+    font-size: 25pt;
+    line-height: 1.04;
+    letter-spacing: -0.4pt;
+    color: var(--ink);
+    font-weight: 300;
+  }
+  .name strong { font-weight: 700; }
+  .role {
+    margin-top: 1.6mm;
+    font-size: 9.2pt;
+    font-weight: 600;
+    color: var(--sage);
+  }
+  .role span { color: var(--rule); font-weight: 400; margin: 0 1.2mm; }
+  .header-tag {
+    flex: 0 0 auto;
+    text-align: right;
+    font-size: 7.4pt;
+    letter-spacing: 1.1pt;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-bottom: 1mm;
+  }
+
+  /* ---------- columns ---------- */
+  .cols { display: flex; gap: 8mm; margin-top: 5mm; }
+  .side { flex: 0 0 54mm; }
+  .main { flex: 1 1 auto; min-width: 0; }
+
+  h2 {
+    font-size: 7.6pt;
+    font-weight: 700;
+    letter-spacing: 1.5pt;
+    text-transform: uppercase;
+    color: var(--sage);
+    padding-bottom: 1.1mm;
+    margin-bottom: 2.4mm;
+    border-bottom: 0.6pt solid var(--rule);
+  }
+  .side section + section,
+  .main section + section { margin-top: 5mm; }
+
+  /* ---------- contact ---------- */
+  .contact li {
+    list-style: none;
+    display: flex;
+    gap: 2mm;
+    margin-bottom: 1.5mm;
+    color: var(--ink-soft);
+    word-break: break-word;
+  }
+  /* The address is the one value too long for the column at body size. */
+  .contact .sm { font-size: 7.5pt; letter-spacing: -0.05pt; }
+  .contact .ico {
+    flex: 0 0 6.2mm;
+    white-space: nowrap;
+    color: var(--sage);
+    font-family: "Segoe UI Symbol", "Segoe UI", sans-serif;
+    text-align: center;
+  }
+  /* Text badge for the links that have no unambiguous unicode glyph. */
+  .contact .ico.tag {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 6.4pt;
+    font-weight: 700;
+    letter-spacing: 0.3pt;
+    text-transform: uppercase;
+    background: var(--tint);
+    color: #2E6B4E;
+    border-radius: 0.8mm;
+    padding: 0.2mm 0;
+    line-height: 1.7;
+  }
+
+  /* ---------- skills ---------- */
+  .skill-group { margin-bottom: 2.8mm; }
+  .skill-group:last-child { margin-bottom: 0; }
+  .skill-group h3 {
+    font-size: 7pt;
+    font-weight: 700;
+    letter-spacing: 0.7pt;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1.2mm;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 1.1mm; }
+  .chip {
+    background: var(--tint);
+    color: #2E6B4E;
+    border-radius: 1mm;
+    padding: 0.5mm 1.4mm;
+    font-size: 7.4pt;
+    white-space: nowrap;
+  }
+
+  /* ---------- languages ---------- */
+  .langs li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 2mm;
+    padding: 0.9mm 0;
+    border-bottom: 0.4pt dotted var(--rule);
+  }
+  .langs li:last-child { border-bottom: 0; }
+  .langs b { font-weight: 600; color: var(--ink); }
+  .langs span { color: var(--muted); font-size: 7.6pt; }
+
+  /* ---------- profile ---------- */
+  .profile { text-align: justify; color: var(--ink-soft); }
+
+  /* ---------- experience / education ---------- */
+  .entry { margin-bottom: 3.6mm; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 4mm;
+  }
+  .entry-title {
+    font-size: 9pt;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.28;
+  }
+  .entry-date {
+    flex: 0 0 auto;
+    font-size: 7.6pt;
+    font-weight: 600;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .badge-now {
+    display: inline-block;
+    background: var(--sage);
+    color: #fff;
+    font-size: 6.4pt;
+    font-weight: 700;
+    letter-spacing: 0.8pt;
+    text-transform: uppercase;
+    border-radius: 1mm;
+    padding: 0.3mm 1.3mm;
+    margin-right: 1.4mm;
+    vertical-align: 0.35mm;
+  }
+  .entry-meta {
+    margin-top: 0.5mm;
+    font-size: 8pt;
+    color: var(--sage);
+    font-weight: 600;
+  }
+  .entry-meta em { color: var(--muted); font-style: normal; font-weight: 400; }
+  .entry ul { margin: 1.4mm 0 0 3.4mm; }
+  .entry li { margin-bottom: 0.9mm; padding-left: 0.6mm; }
+  .entry li::marker { color: var(--sage); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div>
+      <div class="name">Mohamed Amine <strong>MIDENI</strong></div>
+      <div class="role">
+        Ingénieur logiciel full-stack <span>·</span> IA/ML &amp; DevOps <span>·</span> Orienté qualité
+      </div>
+    </div>
+    <div class="header-tag">Curriculum&nbsp;Vitae</div>
+  </header>
+
+  <div class="cols">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="side">
+
+      <section>
+        <h2>Contact</h2>
+        <ul class="contact">
+          <li><span class="ico">&#9993;</span><span class="sm">mohamedamine.mideni@gmail.com</span></li>
+          <li><span class="ico">&#9742;</span><span>+216 24 905 669</span></li>
+          <li><span class="ico">&#8962;</span><span>Sousse, Tunisie</span></li>
+          <li><span class="ico tag">web</span><span>mideniportfolio.netlify.app</span></li>
+          <li><span class="ico tag">in</span><span>mohamed-amine-mideni</span></li>
+          <li><span class="ico tag">gh</span><span>github.com/MiDeNiMeeD</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Compétences</h2>
+
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <div class="chips">
+            <span class="chip">Node.js</span><span class="chip">Express</span>
+            <span class="chip">Fastify</span><span class="chip">Java / Spring Boot</span>
+            <span class="chip">Microservices</span><span class="chip">API REST</span>
+            <span class="chip">Python</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <div class="chips">
+            <span class="chip">React</span><span class="chip">TypeScript</span>
+            <span class="chip">JavaScript</span><span class="chip">Next.js</span>
+            <span class="chip">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>QA &amp; Tests</h3>
+          <div class="chips">
+            <span class="chip">Selenium</span><span class="chip">Postman</span>
+            <span class="chip">JUnit</span><span class="chip">Mockito</span>
+            <span class="chip">Conception de tests</span><span class="chip">Agile</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Bases de données</h3>
+          <div class="chips">
+            <span class="chip">PostgreSQL</span><span class="chip">MongoDB</span>
+            <span class="chip">Redis</span><span class="chip">Prisma</span>
+            <span class="chip">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>DevOps &amp; Cloud</h3>
+          <div class="chips">
+            <span class="chip">Docker</span><span class="chip">CI/CD</span>
+            <span class="chip">Jenkins</span><span class="chip">Kubernetes</span>
+            <span class="chip">Linux</span><span class="chip">Git</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Temps réel &amp; Messaging</h3>
+          <div class="chips">
+            <span class="chip">Socket.IO</span><span class="chip">Kafka</span>
+            <span class="chip">RabbitMQ</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>IA &amp; ML</h3>
+          <div class="chips">
+            <span class="chip">TensorFlow / Keras</span><span class="chip">scikit-learn</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Langues</h2>
+        <ul class="langs">
+          <li><b>Arabe</b><span>Langue maternelle</span></li>
+          <li><b>Français</b><span>Courant</span></li>
+          <li><b>Anglais</b><span>Professionnel</span></li>
+          <li><b>Allemand</b><span>A2</span></li>
+        </ul>
+      </section>
+
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+    <div class="main">
+
+      <section>
+        <h2>Profil</h2>
+        <p class="profile">
+          Ingénieur logiciel full-stack, je conçois et déploie des applications de bout en bout —
+          du backend distribué (microservices, event-driven) au frontend React/TypeScript, avec une
+          forte culture DevOps (Docker, CI/CD) et IA/ML. La qualité et les tests sont au cœur de ma
+          manière de construire des produits fiables.
+        </p>
+      </section>
+
+      <section>
+        <h2>Expérience</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">Ingénieur logiciel full-stack — Stage de fin d'études (PFE)</div>
+            <div class="entry-date">2026</div>
+          </div>
+          <div class="entry-meta">Codemize Solution <em>· Sousse, Tunisie</em></div>
+          <ul>
+            <li>Réalisation de <b>Mallify</b>, une marketplace e-commerce orientée événements découpée en plus de 18 microservices indépendants.</li>
+            <li>Développement des services en Node.js avec une base MongoDB par service et une communication événementielle via un message broker.</li>
+            <li>Conteneurisation de chaque service avec Docker &amp; Docker Compose pour un déploiement indépendant et une montée en charge service par service.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">Ingénieur logiciel full-stack — Stage d'été</div>
+            <div class="entry-date">Été 2025</div>
+          </div>
+          <div class="entry-meta">Midani IT <em>· Sousse, Tunisie</em></div>
+          <ul>
+            <li>Développement de <b>VitaSensor</b>, une plateforme hospitalière temps réel de suivi des signes vitaux via WebSockets (Socket.IO).</li>
+            <li>Frontend React/TypeScript multi-rôles (admin, médecin, infirmier) sur un backend Node.js/Express + PostgreSQL (Prisma) avec authentification JWT.</li>
+            <li>Intégration de modèles d'IA/ML Python (LSTM, Random Forest, Isolation Forest) pour prédire le risque patient et alimenter un système d'alertes multi-niveaux.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">Ingénieur logiciel — Stage de projet de fin d'année (PFA)</div>
+            <div class="entry-date">2025</div>
+          </div>
+          <div class="entry-meta">Codemize Solution <em>· Sousse, Tunisie</em></div>
+          <ul>
+            <li>Réalisation de <b>Shoofli</b>, une marketplace de services mettant en relation clients et techniciens locaux.</li>
+            <li>Développement d'une application React + TypeScript (SPA) avec des espaces distincts client, technicien et admin — publications, contact intégré et notifications.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">Développeur web full-stack — Freelance</div>
+            <div class="entry-date"><span class="badge-now">Actuel</span>2021 — Présent</div>
+          </div>
+          <div class="entry-meta">Freelance / Indépendant <em>· À distance · Tunisie</em></div>
+          <ul>
+            <li>Livraison de plateformes et d'applications web sur mesure pour des clients, de bout en bout — de la conception et du design UI/UX au développement et au déploiement.</li>
+            <li>Réalisation de plateformes pour restaurants, d'une application de livraison et de sites e-commerce adaptés à l'activité de chaque client.</li>
+            <li>Gestion autonome du cycle de projet complet : recueil des besoins, design, développement frontend &amp; backend, et livraison client.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Formation</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">Diplôme d'ingénieur en génie logiciel — Diplômé avec mention Excellent</div>
+            <div class="entry-date">2023 — 2026</div>
+          </div>
+          <div class="entry-meta">EPI Digital School, Sousse</div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">Cycle préparatoire en Technologies de l'Information &amp; de la Communication (TIC)</div>
+            <div class="entry-date">2020 — 2022</div>
+          </div>
+          <div class="entry-meta">EPI Digital School, Sousse</div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">Classes préparatoires aux études d'ingénieur</div>
+            <div class="entry-date">2019 — 2020</div>
+          </div>
+          <div class="entry-meta">Institut Préparatoire aux Études d'Ingénieur de Monastir (IPEIM)</div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

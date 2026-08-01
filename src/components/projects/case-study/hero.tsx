@@ -40,10 +40,12 @@ export function CaseStudyHero({ project }: { project: Project }) {
 
       <Reveal delay={0.1}>
         <div className="mt-8 flex flex-wrap gap-3">
-          <Button href={project.github} external>
-            <FaGithub className="h-4 w-4" />
-            {t("codeSource")}
-          </Button>
+          {project.github && (
+            <Button href={project.github} external>
+              <FaGithub className="h-4 w-4" />
+              {t("codeSource")}
+            </Button>
+          )}
           {project.demo && (
             <Button href={project.demo} variant="outline" external>
               <ExternalLink className="h-4 w-4" />
