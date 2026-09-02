@@ -71,16 +71,6 @@ function ExperienceCard({
           <span className="whitespace-nowrap text-sm text-[var(--muted-foreground)]">{item.period}</span>
         </div>
 
-        <button
-          type="button"
-          onClick={() => setExpanded((e) => !e)}
-          aria-expanded={expanded}
-          className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-[var(--accent)] hover:underline"
-        >
-          {expanded ? t("hideDetails") : t("showDetails")}
-          <ChevronDown className={cn("h-3.5 w-3.5 transition-transform", expanded && "rotate-180")} />
-        </button>
-
         {expanded && (
           <>
             <ul className="mt-4 flex flex-col gap-2">
@@ -103,6 +93,16 @@ function ExperienceCard({
             )}
           </>
         )}
+
+        <button
+          type="button"
+          onClick={() => setExpanded((e) => !e)}
+          aria-expanded={expanded}
+          className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-[var(--accent)] hover:underline"
+        >
+          {expanded ? t("hideDetails") : t("showDetails")}
+          <ChevronDown className={cn("h-3.5 w-3.5 transition-transform", expanded && "rotate-180")} />
+        </button>
       </div>
     </Reveal>
   );
