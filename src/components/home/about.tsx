@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { SectionHeading } from "@/components/common/section-heading";
 import { Reveal } from "@/components/common/reveal";
 import { Markdown } from "@/components/common/markdown";
+import { ShowMore } from "@/components/common/show-more";
 import { AboutBugHunt } from "./about-bug-hunt";
 
 export function About({
@@ -20,7 +21,9 @@ export function About({
       <SectionHeading eyebrow={t("eyebrow")} title={headline} description={focus} />
       <div className="mt-12 grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-start">
         {/* Not wrapped in Reveal: likely LCP candidate, see case-study/about.tsx. */}
-        <Markdown content={content} className="text-base" />
+        <ShowMore moreLabel={t("showMore")} lessLabel={t("showLess")}>
+          <Markdown content={content} className="text-base" />
+        </ShowMore>
         <Reveal delay={0.1}>
           <AboutBugHunt
             title={t("bugHuntTitle")}

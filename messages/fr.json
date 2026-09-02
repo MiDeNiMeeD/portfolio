@@ -32,7 +32,9 @@
     "eyebrow": "À propos",
     "bugHuntTitle": "Chasse aux bugs",
     "bugHuntCounterLabel": "bugs traqués et corrigés",
-    "bugHuntTagline": "Un bug trouvé en test vaut mieux qu'un bug trouvé en prod."
+    "bugHuntTagline": "Un bug trouvé en test vaut mieux qu'un bug trouvé en prod.",
+    "showMore": "Voir plus",
+    "showLess": "Voir moins"
   },
   "Experience": {
     "eyebrow": "Parcours",
@@ -40,7 +42,9 @@
     "description": "Construire des produits full-stack — backend, frontend et DevOps — avec la qualité comme fil conducteur.",
     "current": "En cours",
     "selfDirected": "Auto-formation",
-    "viewCaseStudy": "Voir l'étude de cas"
+    "viewCaseStudy": "Voir l'étude de cas",
+    "showDetails": "Voir les détails",
+    "hideDetails": "Masquer les détails"
   },
   "Education": {
     "eyebrow": "Formation",

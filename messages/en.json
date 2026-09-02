@@ -32,7 +32,9 @@
     "eyebrow": "About",
     "bugHuntTitle": "Bug Hunt",
     "bugHuntCounterLabel": "bugs tracked & squashed",
-    "bugHuntTagline": "A bug found in testing is a bug that never reaches production."
+    "bugHuntTagline": "A bug found in testing is a bug that never reaches production.",
+    "showMore": "Show more",
+    "showLess": "Show less"
   },
   "Experience": {
     "eyebrow": "Journey",
@@ -40,7 +42,9 @@
     "description": "Building full-stack products across backend, frontend, and DevOps — with quality as a constant.",
     "current": "Ongoing",
     "selfDirected": "Self-directed",
-    "viewCaseStudy": "View case study"
+    "viewCaseStudy": "View case study",
+    "showDetails": "Show details",
+    "hideDetails": "Hide details"
   },
   "Education": {
     "eyebrow": "Education",
